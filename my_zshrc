@@ -1,0 +1,7 @@
+# AWS CLI Alias. 
+alias ags='aws secretsmanager get-secret-value --secret-id "$1" --query SecretString --output text | jq -r ".password"'
+
+# K8S Alias.
+alias k=kubectl
+alias kge="kubectl get"
+alias kde="kubectl describe"
